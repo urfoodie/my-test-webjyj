@@ -33,5 +33,8 @@ let active='全部';const cats=['全部','查询','写入'];function render(){co
 function show(i){const x=items[i],d=document.getElementById('detail');d.classList.add('show');d.innerHTML=`<div class="detail-inner"><button class="detail-close" onclick="closeDetail()" aria-label="关闭详情">关闭</button><div class="eyebrow">Scenario ${x[0]} · ${x[4]} access</div><h3>${x[1]}</h3><p>${x[2]}</p><div class="detail-grid"><div><strong>典型使用场景</strong><ul><li>${x[3]}</li><li>支持精确查询、分页和批量处理，并明确返回无结果或校验失败。</li></ul></div><div><strong>接口关注点</strong><ul><li>${x[4]==='写入'?'写入权限独立、幂等、防重复、返回业务单号。':'数据来源唯一、字段完整、可核对、保留时间与来源。'}</li><li>与相关模块分开授权，避免把查询能力和业务变更混在一起。</li></ul></div></div></div>`}
 function closeDetail(){document.getElementById('detail').classList.remove('show')}
 </script>
+<script>
+items[10]=['11','库存数据','提供完整的库存、入库和出库信息，包含批号、有效期、库地/库位、库存状态及关联单据。','报价或下单前确认可售库存；入库、出库和库存变更可按商品、批号、库地及时间追溯。','查询','库存'];render();
+</script>
 </body></html>
 
