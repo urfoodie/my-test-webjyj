@@ -36,6 +36,7 @@ function closeDetail(){document.getElementById('detail').classList.remove('show'
 <script>
 items[10]=['11','库存数据','提供完整的库存、入库和出库信息，包含批号、有效期、库地/库位、库存状态及关联单据。','报价或下单前确认可售库存；入库、出库和库存变更可按商品、批号、库地及时间追溯。','查询','库存'];
 items[7]=['08','采购','覆盖原料采购、采购任务、合同、再生产、在途及分公司采购协同，明确采购主体、处理人和归属公司。','订单缺货时查询原料采购、货期、批次和到货安排；分公司采购需按公司、采购组织和库地隔离查询，并能追踪跨公司协同状态。','查询','原料 / 分公司'];render();
+document.getElementById('detail').addEventListener('click',e=>{if(e.target.id==='detail')closeDetail()});
 </script>
 </body></html>
 
