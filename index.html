@@ -42,6 +42,7 @@ items[2]=['03','报价','支持按客户、商品、品牌、规格和数量查�
 document.getElementById('detail').addEventListener('click',e=>{if(e.target.id==='detail')closeDetail()});
 const boundary=document.getElementById('boundaries');boundary.querySelector('.eyebrow').textContent='接口权限边界';boundary.querySelector('h2').textContent='查询接口与写入接口分开定义';boundary.querySelector('.section-lead').textContent='查询、创建、修改、取消和回写分别定义权限、参数、返回结果及审计要求。';boundary.querySelector('.read h3').textContent='查询接口（只读）';boundary.querySelector('.read p').textContent='用于商品、品牌、价格、库存、知识库、订单、采购、物流和财务信息查询，支持精确/模糊查询、分页、批量和增量获取；不修改业务主数据。';boundary.querySelector('.write h3').textContent='写入接口';boundary.querySelector('.write p').textContent='用于询报价录入、订单下单、附件保存、行项目编辑及必要的业务回写；需要校验、幂等控制、防重复提交，并返回业务单号、状态和失败原因。';
 const hero=document.querySelector('.hero');hero.querySelector('.eyebrow').textContent='业务目标与接口场景';hero.querySelector('h1').innerHTML='业务系统接口需求说明';hero.querySelector('.hero p').textContent='按商品、报价、订单、采购、库存、资料和售后等业务流程整理接口目标、使用场景、数据范围及权限边界，供 IT 评估接口提供方式。';
+const overview=document.querySelector('.stats').closest('.section');overview.querySelector('.eyebrow').textContent='需求范围与状态';overview.querySelector('h2').textContent='接口需求概览';overview.querySelector('.section-lead').textContent='本文为业务侧需求草稿，用于说明业务目标、使用场景和接口边界，不代表已提交 OA、已批准开发或接口已经提供。';
 </script>
 </body></html>
 
