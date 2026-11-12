@@ -41,6 +41,7 @@ items[12]=['13','数据服务','数据提取涉及多个业务域和多组接口
 items[2]=['03','报价','支持按客户、商品、品牌、规格和数量查询可售价格，并结合客户折扣、历史成交均价和选品推荐生成可解释的报价依据。','报价时按客户身份和适用规则计算折扣，展示历史均价的统计口径与时间范围，并推荐可替代或更合适的商品；所有价格、库存和推荐结果都必须来自系统数据并保留来源。','查询','折扣 / 均价 / 推荐'];render();
 document.getElementById('detail').addEventListener('click',e=>{if(e.target.id==='detail')closeDetail()});
 const boundary=document.getElementById('boundaries');boundary.querySelector('.eyebrow').textContent='接口权限边界';boundary.querySelector('h2').textContent='查询接口与写入接口分开定义';boundary.querySelector('.section-lead').textContent='查询、创建、修改、取消和回写分别定义权限、参数、返回结果及审计要求。';boundary.querySelector('.read h3').textContent='查询接口（只读）';boundary.querySelector('.read p').textContent='用于商品、品牌、价格、库存、知识库、订单、采购、物流和财务信息查询，支持精确/模糊查询、分页、批量和增量获取；不修改业务主数据。';boundary.querySelector('.write h3').textContent='写入接口';boundary.querySelector('.write p').textContent='用于询报价录入、订单下单、附件保存、行项目编辑及必要的业务回写；需要校验、幂等控制、防重复提交，并返回业务单号、状态和失败原因。';
+const hero=document.querySelector('.hero');hero.querySelector('.eyebrow').textContent='业务目标与接口场景';hero.querySelector('h1').innerHTML='业务系统接口需求说明';hero.querySelector('.hero p').textContent='按商品、报价、订单、采购、库存、资料和售后等业务流程整理接口目标、使用场景、数据范围及权限边界，供 IT 评估接口提供方式。';
 </script>
 </body></html>
 
